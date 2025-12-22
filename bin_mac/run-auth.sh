@@ -25,3 +25,4 @@ cd "$SCRIPT_DIR/../ruoyi-auth/target" || exit 1
 java -Dfile.encoding=utf-8 $JAVA_OPTS -jar ruoyi-auth.jar
 
 read -p "按回车键退出..."
+

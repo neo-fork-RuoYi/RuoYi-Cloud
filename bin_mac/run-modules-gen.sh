@@ -29,3 +29,4 @@ cd "$SCRIPT_DIR" || exit 1
 
 # 暂停
 read -p "按回车键退出..."
+

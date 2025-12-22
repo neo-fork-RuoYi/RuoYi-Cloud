@@ -21,3 +21,4 @@ cd "$SCRIPT_DIR/../ruoyi-gateway/target" || exit 1
 java -Dfile.encoding=utf-8 $JAVA_OPTS -jar ruoyi-gateway.jar
 
 read -p "按回车键退出..."
+

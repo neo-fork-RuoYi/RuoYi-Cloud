@@ -23,3 +23,4 @@ mvn clean package -Dmaven.test.skip=true
 
 # 暂停
 read -p "按回车键退出..."
+
