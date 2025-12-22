@@ -1,5 +1,5 @@
 /tmp/
-/conf/mysql/db/*.sql
-/ruoyi/**/*.jar
+# /conf/mysql/db/*.sql
+# /ruoyi/**/*.jar
 
 

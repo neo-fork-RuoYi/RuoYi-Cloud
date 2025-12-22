@@ -69,11 +69,11 @@ services:
       - ./conf/nginx/conf.d:/etc/nginx/conf.d
       # - ./nginx/html/dist:/home/ruoyi/projects/ruoyi-ui
       - ./tmp/nginx/logs:/var/log/nginx
-      - ../ruoyi-ui/dist:/home/ruoyi/projects/ruoyi-ui
+      - ../web/vue3:/home/ruoyi/projects/ruoyi-ui
     depends_on:
       ruoyi-gateway:
         condition: service_healthy
-   ruoyi-nginx2:
+  ruoyi-nginx2:
     container_name: ruoyi-nginx2
     image: nginx
     build:
@@ -84,11 +84,11 @@ services:
       - ./conf/nginx/nginx.conf:/etc/nginx/nginx.conf
       - ./conf/nginx/conf.d:/etc/nginx/conf.d
       # - ./nginx/html/dist:/home/ruoyi/projects/ruoyi-ui
-      - ./tmp/nginx/logs:/var/log/nginx
+      - ./tmp/nginx2/logs:/var/log/nginx
       - ../web/vue3:/home/ruoyi/projects/ruoyi-ui
     depends_on:
       ruoyi-gateway:
-        condition: service_healthy       
+        condition: service_healthy
   ruoyi-gateway:
     container_name: ruoyi-gateway
     build:
