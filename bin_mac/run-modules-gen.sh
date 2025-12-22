@@ -6,12 +6,12 @@ echo
 
 # 自动设置 JAVA_HOME（mac）
 if [ -z "$JAVA_HOME" ]; then
-  export JAVA_HOME=$(/usr/libexec/java_home 2>/dev/null)
+	export JAVA_HOME=$(/usr/libexec/java_home 2>/dev/null)
 fi
 
 if [ -z "$JAVA_HOME" ]; then
-  echo "[错误] JAVA_HOME 未设置"
-  exit 1
+	echo "[错误] JAVA_HOME 未设置"
+	exit 1
 fi
 
 # JVM 参数
@@ -29,4 +29,3 @@ cd "$SCRIPT_DIR" || exit 1
 
 # 暂停
 read -p "按回车键退出..."
-

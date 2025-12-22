@@ -17,4 +17,3 @@ export PATH="$JAVA_HOME/bin:$PATH"
 ./run-modules-job.sh
 ./run-modules-system.sh
 ./run-monitor.sh
-
