@@ -69,7 +69,7 @@ services:
       - ./conf/nginx/conf.d:/etc/nginx/conf.d
       # - ./nginx/html/dist:/home/ruoyi/projects/ruoyi-ui
       - ./tmp/nginx/logs:/var/log/nginx
-      - ../web/vue3:/home/ruoyi/projects/ruoyi-ui
+      - ./web/vue:/home/ruoyi/projects/ruoyi-ui
     depends_on:
       ruoyi-gateway:
         condition: service_healthy
@@ -85,7 +85,7 @@ services:
       - ./conf/nginx/conf.d:/etc/nginx/conf.d
       # - ./nginx/html/dist:/home/ruoyi/projects/ruoyi-ui
       - ./tmp/nginx2/logs:/var/log/nginx
-      - ../web/vue3:/home/ruoyi/projects/ruoyi-ui
+      - ./web/vue3:/home/ruoyi/projects/ruoyi-ui
     depends_on:
       ruoyi-gateway:
         condition: service_healthy
