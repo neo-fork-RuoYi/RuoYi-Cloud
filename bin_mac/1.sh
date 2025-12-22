@@ -1,3 +1,13 @@
+#!/bin/bash
+
+# # ubuntu / linux
+# export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+# export PATH=$JAVA_HOME/bin:$PATH
+
+# mac
+export JAVA_HOME=$(/usr/libexec/java_home -v 17)
+export PATH="$JAVA_HOME/bin:$PATH"
+
 ./clean.sh
 ./package.sh
 ./run-auth.sh
