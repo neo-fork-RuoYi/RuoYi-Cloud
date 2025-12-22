@@ -1,0 +1,9 @@
+./clean.sh
+./package.sh
+./run-auth.sh
+./run-gateway.sh
+./run-modules-file.sh
+./run-modules-gen.sh
+./run-modules-job.sh
+./run-modules-system.sh
+./run-monitor.sh

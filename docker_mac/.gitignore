@@ -1,0 +1,11 @@
+/tmp/
+/mysql/data
+/mysql/db/*.sql
+/mysql/conf
+/mysql/logs
+/nacos/logs
+/nginx/logs
+/redis/data
+/ruoyi/**/*.jar
+
+
