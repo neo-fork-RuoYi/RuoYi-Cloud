@@ -57,6 +57,7 @@ services:
     depends_on:
       ruoyi-mysql:
         condition: service_healthy
+
   ruoyi-nginx:
     container_name: ruoyi-nginx
     image: nginx
