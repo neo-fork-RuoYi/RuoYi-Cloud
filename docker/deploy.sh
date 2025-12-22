@@ -7,7 +7,7 @@ usage() {
 }
 
 # 开启所需端口
-port(){
+port() {
 	firewall-cmd --add-port=80/tcp --permanent
 	firewall-cmd --add-port=8080/tcp --permanent
 	firewall-cmd --add-port=8848/tcp --permanent
@@ -25,22 +25,22 @@ port(){
 }
 
 # 启动基础环境（必须）
-base(){
+base() {
 	docker-compose up -d ruoyi-mysql ruoyi-redis ruoyi-nacos
 }
 
 # 启动程序模块（必须）
-modules(){
+modules() {
 	docker-compose up -d ruoyi-nginx ruoyi-gateway ruoyi-auth ruoyi-modules-system
 }
 
 # 关闭所有环境/模块
-stop(){
+stop() {
 	docker-compose stop
 }
 
 # 删除所有环境/模块
-rm(){
+rm() {
 	docker-compose rm
 }
 
@@ -48,20 +48,20 @@ rm(){
 case "$1" in
 "port")
 	port
-;;
+	;;
 "base")
 	base
-;;
+	;;
 "modules")
 	modules
-;;
+	;;
 "stop")
 	stop
-;;
+	;;
 "rm")
 	rm
-;;
+	;;
 *)
 	usage
-;;
+	;;
 esac

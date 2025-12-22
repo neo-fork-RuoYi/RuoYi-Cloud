@@ -1,9 +1,8 @@
 # Tomcat
 server:
   port: 8080
-
 # Spring
-spring: 
+spring:
   application:
     # 应用名称
     name: ruoyi-gateway
@@ -19,8 +18,10 @@ spring:
         # 配置中心地址
         server-addr: 127.0.0.1:8848
         # 配置文件格式
+
         file-extension: yml
         # 共享配置
+
         shared-configs:
           - application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
     sentinel:
@@ -30,6 +31,7 @@ spring:
         # 控制台地址
         dashboard: 127.0.0.1:8718
       # nacos配置持久化
+
       datasource:
         ds1:
           nacos:
